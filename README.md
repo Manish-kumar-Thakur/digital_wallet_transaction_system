@@ -17,7 +17,7 @@ A CLI-based digital wallet system built in Python with MySQL integration. This a
 
 
 ## Project Structure
-
+```
 Digital_Wallet_Transaction_System/
 │
 ├── user.py              # User model, registration, database interaction
@@ -26,7 +26,7 @@ Digital_Wallet_Transaction_System/
 ├── db.py              # Database connection utility
 ├── main.py              # CLI entry point and flow control
 
-
+```
 
 
 ## Tech Stack
