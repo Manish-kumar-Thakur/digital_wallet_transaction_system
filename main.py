@@ -39,7 +39,7 @@ def main():
         elif choice == "6":
             view_transactions()
         elif choice == "7":
-            print("👋 Goodbye!")
+            print("Thank you for using digital wallet transaction system!")
             break
         else:
             print("Invalid choice. Try again.")

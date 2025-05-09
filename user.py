@@ -15,7 +15,7 @@ def register_user(name, phone, password, tier, limit_amount):
     )
     conn.commit()
     conn.close()
-    print("✅ User registered and wallet created.")
+    print("User registered and wallet created.")
 
 def view_users():
     conn = get_connection()

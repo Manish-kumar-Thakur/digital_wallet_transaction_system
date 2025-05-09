@@ -12,12 +12,12 @@ def send_money(sender_phone, receiver_phone, amount, processor="INTERNAL"):
     receiver = cursor.fetchone()
 
     if not sender or not receiver:
-        print("❌ Sender or receiver wallet not found.")
+        print("Sender or receiver wallet not found.")
         conn.close()
         return
 
     if sender[0] < amount:
-        print("❌ Insufficient balance.")
+        print("Insufficient balance.")
         conn.close()
         return
 
@@ -31,7 +31,7 @@ def send_money(sender_phone, receiver_phone, amount, processor="INTERNAL"):
 
     conn.commit()
     conn.close()
-    print("✅ Transaction successful.")
+    print("Transaction successful.")
 
 def view_transactions():
     conn = get_connection()

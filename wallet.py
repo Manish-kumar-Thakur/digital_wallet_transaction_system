@@ -6,7 +6,7 @@ def add_balance(phone, amount):
     cursor.execute("UPDATE wallets SET balance = balance + %s WHERE phone = %s", (amount, phone))
     conn.commit()
     conn.close()
-    print("💰 Balance added successfully.")
+    print("Balance added successfully.")
 
 def check_balance(phone):
     conn = get_connection()
@@ -15,6 +15,6 @@ def check_balance(phone):
     result = cursor.fetchone()
     conn.close()
     if result:
-        print(f"🔎 Current Balance: ${result[0]:.2f}")
+        print(f"Current Balance: ${result[0]:.2f}")
     else:
-        print("❌ Wallet not found.")
+        print("Wallet not found.")
